@@ -7,7 +7,8 @@
   - [Mappings](Language/Types/Mappings.md)
   - [Enums](Language/Types/Enums.md)
   - [Callable Types](Language/Types/Callable.md)
-  - [Iterators](Language/Types/Iterators.md)
+  - [Iterators](Language/Types/Iterators/README.typ)
+    - [Generators](Language/Types/Iterators/Generators.typ)
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
 - [Variables](Language/Variables.md)

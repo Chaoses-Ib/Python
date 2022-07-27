@@ -1,2 +1,3 @@
 # Libraries
-- [CLI](CLI.md)
+- [CLI](CLI/README.md)
+  - [Click](CLI/Click.md)

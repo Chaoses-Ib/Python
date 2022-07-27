@@ -1,11 +1,14 @@
 # CLI
+- [Click](Click.md)
+
+## Comparison
 Library | Help message | Autocomplete | REPL | i18n
 --- | --- | --- | --- | ---
 [argparse](#argparse) | ✔️ | 
 [getopt](#getopt) | ❌ | 
 [Click](#click) | ✔️<br />[Colorful](https://github.com/click-contrib/click-help-colors) | ✔️ | ✔️[click-repl](https://github.com/click-contrib/click-repl) | ✔️
-[Typer](#typer) | 2-level help<br />Colorful | ✔️ | ✔️[click-repl](https://github.com/click-contrib/click-repl) | ❌
-[Python Fire](#python-fire) | 3-level help | ✔️ | Python | ❌
+[Typer](#typer) | ✔️<br />Colorful | ✔️ | ✔️[click-repl](https://github.com/click-contrib/click-repl) | ❌
+[Python Fire](#python-fire) | Not good | ✔️ | Python | ❌
 [docopt](#docopt) | ✔️ | ✔️[docopt-completion](https://github.com/Infinidat/infi.docopt_completion/) | ❌ | ❌
 
 ## Tranditional

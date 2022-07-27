@@ -1,4 +1,13 @@
 # CLI
+Library | Help message | Autocomplete | REPL | i18n
+--- | --- | --- | --- | ---
+[argparse](#argparse) | ✔️ | 
+[getopt](#getopt) | ❌ | 
+[Click](#click) | ✔️<br />[Colorful](https://github.com/click-contrib/click-help-colors) | ✔️ | ✔️[click-repl](https://github.com/click-contrib/click-repl) | ✔️
+[Typer](#typer) | 2-level help<br />Colorful | ✔️ | ✔️[click-repl](https://github.com/click-contrib/click-repl) | ❌
+[Python Fire](#python-fire) | 3-level help | ✔️ | Python | ❌
+[docopt](#docopt) | ✔️ | ✔️[docopt-completion](https://github.com/Infinidat/infi.docopt_completion/) | ❌ | ❌
+
 ## Tranditional
 ### [argparse](https://docs.python.org/3/library/argparse.html)
 The following code is a program that takes a list of integers and produces either the sum or the max:
@@ -61,97 +70,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Deducing from arguments
-### [Python Fire](https://github.com/google/python-fire/)
-Example:
-```python
-import fire
-
-class BrokenCalculator(object):
-
-  def __init__(self, offset=1):
-      self._offset = offset
-
-  def add(self, x, y):
-    return x + y + self._offset
-
-  def multiply(self, x, y):
-    return x * y + self._offset
-
-if __name__ == '__main__':
-  fire.Fire(BrokenCalculator)
-```
-
-Usage:
-```
-$ python example.py add 10 20
-31
-
-$ python example.py add 10 20 --offset=0
-30
-```
-
-### [Typer](https://typer.tiangolo.com/)
-[tiangolo/typer](https://github.com/tiangolo/typer)
-
-Example:
-```python
-import typer
-
-app = typer.Typer()
-
-@app.command()
-def hello(name: str):
-    print(f"Hello {name}")
-
-@app.command()
-def goodbye(name: str, formal: bool = False):
-    if formal:
-        print(f"Goodbye Ms. {name}. Have a good day.")
-    else:
-        print(f"Bye {name}!")
-
-if __name__ == "__main__":
-    app()
-```
-
-Help message:
-```
-$ python main.py --help
-
- Usage: main.py [OPTIONS] COMMAND [ARGS]...          
-                                                     
-╭─ Options ─────────────────────────────────────────╮
-│ --install-completion          Install completion  │
-│                               for the current     │
-│                               shell.              │
-│ --show-completion             Show completion for │
-│                               the current shell,  │
-│                               to copy it or       │
-│                               customize the       │
-│                               installation.       │
-│ --help                        Show this message   │
-│                               and exit.           │
-╰───────────────────────────────────────────────────╯
-╭─ Commands ────────────────────────────────────────╮
-│ goodbye                                           │
-│ hello                                             │
-╰───────────────────────────────────────────────────╯
-
-$ python main.py hello --help
-
- Usage: main.py goodbye [OPTIONS] NAME               
-                                                     
-╭─ Arguments ───────────────────────────────────────╮
-│ *    name      TEXT  [default: None] [required]   │
-╰───────────────────────────────────────────────────╯
-╭─ Options ─────────────────────────────────────────╮
-│ --formal    --no-formal      [default: no-formal] │
-│ --help                       Show this message    │
-│                              and exit.            │
-╰───────────────────────────────────────────────────╯
-```
-
+## Decorator-based
 ### [Click](https://click.palletsprojects.com/)
 [pallets/click](https://github.com/pallets/click)
 
@@ -184,7 +103,142 @@ Options:
   --help           Show this message and exit.
 ```
 
-## Deducing from formal languages
+### [Typer](https://typer.tiangolo.com/)
+[tiangolo/typer](https://github.com/tiangolo/typer)  
+Based on [Click](#click).
+
+Example:
+```python
+import typer
+
+app = typer.Typer()
+
+@app.command()
+def hello(name: str):
+    print(f"Hello {name}")
+
+@app.command()
+def goodbye(name: str, formal: bool = False):
+    if formal:
+        print(f"Goodbye Ms. {name}. Have a good day.")
+    else:
+        print(f"Bye {name}!")
+
+if __name__ == "__main__":
+    app()
+```
+
+Help message (colorful):
+```
+$ python main.py --help
+
+ Usage: main.py [OPTIONS] COMMAND [ARGS]...          
+                                                     
+╭─ Options ─────────────────────────────────────────╮
+│ --install-completion          Install completion  │
+│                               for the current     │
+│                               shell.              │
+│ --show-completion             Show completion for │
+│                               the current shell,  │
+│                               to copy it or       │
+│                               customize the       │
+│                               installation.       │
+│ --help                        Show this message   │
+│                               and exit.           │
+╰───────────────────────────────────────────────────╯
+╭─ Commands ────────────────────────────────────────╮
+│ goodbye                                           │
+│ hello                                             │
+╰───────────────────────────────────────────────────╯
+
+```
+```
+$ python main.py hello --help
+
+ Usage: main.py goodbye [OPTIONS] NAME               
+                                                     
+╭─ Arguments ───────────────────────────────────────╮
+│ *    name      TEXT  [default: None] [required]   │
+╰───────────────────────────────────────────────────╯
+╭─ Options ─────────────────────────────────────────╮
+│ --formal    --no-formal      [default: no-formal] │
+│ --help                       Show this message    │
+│                              and exit.            │
+╰───────────────────────────────────────────────────╯
+
+```
+
+### [Python Fire](https://github.com/google/python-fire/)
+Example:
+```python
+import fire
+
+class BrokenCalculator(object):
+
+  def __init__(self, offset=1):
+      self._offset = offset
+
+  def add(self, x, y):
+    return x + y + self._offset
+
+  def multiply(self, x, y):
+    return x * y + self._offset
+
+if __name__ == '__main__':
+  fire.Fire(BrokenCalculator)
+```
+
+Help message:
+```
+$ python main.py --help
+INFO: Showing help with the command 'main.py -- --help'.
+
+NAME
+    main.py
+
+SYNOPSIS
+    main.py <flags>
+
+FLAGS
+    --offset=OFFSET
+        Default: 1
+```
+```
+$ python main.py - --help
+INFO: Showing help with the command 'test2.py - -- --help'.
+
+NAME
+    test2.py
+
+SYNOPSIS
+    test2.py - COMMAND
+
+COMMANDS
+    COMMAND is one of the following:
+
+     add
+
+     multiply
+```
+```
+$ python main.py add --help
+INFO: Showing help with the command 'test2.py add -- --help'.
+
+NAME
+    test2.py add
+
+SYNOPSIS
+    test2.py add X Y
+
+POSITIONAL ARGUMENTS
+    X
+    Y
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+```
+
+## Formal-language-based
 ### [docopt](https://github.com/docopt/docopt)
 Example:
 ```python

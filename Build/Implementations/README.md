@@ -2,9 +2,11 @@
 ## .NET
 ### Implementations
 - [IronPython](https://ironpython.net/) ([repo](https://github.com/IronLanguages/ironpython3))  
-  The current target is Python 3.4, although features and behaviors from later versions may be included.
+  An implementation of the Python programming language which is tightly integrated with .NET. The current target is Python 3.4, although features and behaviors from later versions may be included.
 - [Pyjion](https://www.trypyjion.com/) ([repo](https://github.com/tonybaloney/Pyjion))  
   A JIT extension for CPython that compiles your Python code into native CIL and executes it using the .NET CLR.
+- [pytocs](https://github.com/uxmal/pytocs)  
+  Converts Python source to C#.
 
 ### Bindings
 - [Python.NET](http://pythonnet.github.io/) ([repo](https://github.com/pythonnet/pythonnet))  

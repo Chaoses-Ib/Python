@@ -1,4 +1,7 @@
 # Python
+- [Language](Language/README.md)
+  - Expressions
+    - [Atoms](Language/Expressions/Atoms.md)
 - [Build](Build/README.md)
   - [Implementations](Build/Implementations/README.md)
   - [Package Management](Build/Package%20Management/README.md)

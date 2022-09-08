@@ -1,2 +1,0 @@
-# pip
-- [Requirements](Requirements.md)

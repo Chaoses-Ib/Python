@@ -1,2 +1,0 @@
-# GUI
-- [Clipboard](Clipboard.md)

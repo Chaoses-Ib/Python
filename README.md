@@ -8,6 +8,7 @@
     - pip
       - [Requirements](Build/Package%20Management/pip/Requirements.md)
 - Libraries
+  - [Native Data Types](Libraries/Native%20Data%20Types.md)
   - [Iterators](Libraries/Iterators.md)
   - [File Systems](Libraries/File%20Systems/README.md)
   - [CLI](Libraries/CLI/README.md)

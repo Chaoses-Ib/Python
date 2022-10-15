@@ -10,6 +10,8 @@
 - Libraries
   - [Native Data Types](Libraries/Native%20Data%20Types.md)
   - [Iterators](Libraries/Iterators.md)
+  - Text
+    - [Regex](Libraries/Text/Regex.md)
   - [File Systems](Libraries/File%20Systems/README.md)
   - [CLI](Libraries/CLI/README.md)
     - [Click](Libraries/CLI/Click.md)

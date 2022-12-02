@@ -19,5 +19,5 @@
 - [File Systems](Libraries/File%20Systems/README.md)
 - [CLI](Libraries/CLI/README.md)
   - [Click](Libraries/CLI/Click.md)
-- GUI
+- [GUI](Libraries/GUI/README.md)
   - [Clipboard](Libraries/GUI/Clipboard.md)

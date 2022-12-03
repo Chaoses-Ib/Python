@@ -20,4 +20,5 @@
 - [CLI](Libraries/CLI/README.md)
   - [Click](Libraries/CLI/Click.md)
 - [GUI](Libraries/GUI/README.md)
+  - [Qt](Libraries/GUI/Qt/README.md)
   - [Clipboard](Libraries/GUI/Clipboard.md)

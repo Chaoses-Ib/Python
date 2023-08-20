@@ -16,6 +16,7 @@
 - [Iterators](Libraries/Iterators.md)
 - Text
   - [Regex](Libraries/Text/Regex.md)
+  - [JSON](Libraries/Text/JSON.md)
 - [File Systems](Libraries/File%20Systems/README.md)
 - [CLI](Libraries/CLI/README.md)
   - [Click](Libraries/CLI/Click.md)

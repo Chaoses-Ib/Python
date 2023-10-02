@@ -4,6 +4,7 @@
   - [Set Types](Language/Types/Set%20Types.md)
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
+- [Modules](Language/Modules/README.md)
 
 ## Build
 - [Implementations](Build/Implementations/README.md)

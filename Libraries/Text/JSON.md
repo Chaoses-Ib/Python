@@ -19,4 +19,4 @@ x = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
 print(x.name, x.hometown.name, x.hometown.id, x.__dict__['0'])
 ```
 
-Note that [`SimpleNamespace`](https://docs.python.org/3/library/types.html#types.SimpleNamespace) is unhashable.
+Note that [`SimpleNamespace`](https://docs.python.org/3/library/types.html#types.SimpleNamespace) is unhashable and does not support item assignment.

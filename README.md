@@ -5,6 +5,7 @@
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
 - [Statements](Language/Statements/README.md)
+- [Exceptions](Language/Exceptions.md)
 - [Modules](Language/Modules/README.md)
 
 ## Build

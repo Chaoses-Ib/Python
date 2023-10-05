@@ -1,7 +1,8 @@
 # Python
 ## [Language](Language/README.md)
-- Types
+- [Type System](Language/Types/README.md)
   - [Set Types](Language/Types/Set%20Types.md)
+  - [Mappings](Language/Types/Mappings.md)
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
 - [Statements](Language/Statements/README.md)

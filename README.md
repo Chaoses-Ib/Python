@@ -7,6 +7,7 @@
 - [Statements](Language/Statements/README.md)
 - [Exceptions](Language/Exceptions.md)
 - [Modules](Language/Modules/README.md)
+- [Coding Conventions](Language/Coding%20Conventions.md)
 
 ## Build
 - [Implementations](Build/Implementations/README.md)

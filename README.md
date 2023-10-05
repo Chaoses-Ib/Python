@@ -5,6 +5,7 @@
   - [Mappings](Language/Types/Mappings.md)
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
+- [Variables](Language/Variables.md)
 - [Statements](Language/Statements/README.md)
 - [Exceptions](Language/Exceptions.md)
 - [Modules](Language/Modules/README.md)

@@ -8,7 +8,10 @@ A **regular package** is typically implemented as a directory containing an `__
 
 A **namespace package** is a composite of various [portions](https://docs.python.org/3/glossary.html#term-portion), where each portion contributes a subpackage to the parent package. Portions may reside in different locations on the file system. Portions may also be found in zip files, on the network, or anywhere else that Python searches during import. Namespace packages may or may not correspond directly to objects on the file system; they may be virtual modules that have no concrete representation.
 
-## Package relative imports
+## Intra-package references
+[Modules - Python3 Docs](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
+
+### Package relative imports
 For example, given the following package layout:
 ```python
 package/
@@ -32,6 +35,11 @@ from ..subpackage1 import moduleY
 from ..subpackage2.moduleZ import eggs
 from ..moduleA import foo
 ```
+
+[Relative imports in Python 3 - Stack Overflow](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3)
+
+## builtins
+[python - Access builtin functions by `__builtins__` - Stack Overflow](https://stackoverflow.com/questions/28050229/access-builtin-functions-by-builtins)
 
 ## [`__main__`: Top-level code environment](https://docs.python.org/3/library/__main__.html)
 In Python, the special name `__main__` is used for two important constructs:

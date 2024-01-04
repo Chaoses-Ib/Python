@@ -18,7 +18,7 @@
 - [Modules](Language/Modules/README.md)
 - [Coding Conventions](Language/Coding%20Conventions.md)
 
-## Build
+## [Build](Build/README.md)
 - [Implementations](Build/Implementations/README.md)
 - Package Management
   - pip

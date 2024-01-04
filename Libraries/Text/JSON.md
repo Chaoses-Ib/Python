@@ -6,6 +6,8 @@
 - [jsonpickle: Python library for serializing any arbitrary object graph into JSON. It can take almost any Python object and turn the object into JSON. Additionally, it can reconstitute the object back into Python.](https://github.com/jsonpickle/jsonpickle)
   - [jsonstruct](https://github.com/initialxy/jsonstruct)
 
+[python - How to prettyprint a JSON file? - Stack Overflow](https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file)
+
 ## Objects
 [How to convert JSON data into a Python object? - Stack Overflow](https://stackoverflow.com/questions/6578986/how-to-convert-json-data-into-a-python-object)
 

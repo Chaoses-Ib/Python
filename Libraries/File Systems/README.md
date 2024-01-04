@@ -7,3 +7,6 @@ The [os.lstat()](https://docs.python.org/3/library/os.html#os.lstat) implementat
 - By default, [os.walk()](https://docs.python.org/3/library/os.html#os.walk) will not walk down into symbolic links that resolve to directories, *however*, it will walk down into junctions. ([Issue #67596](https://github.com/python/cpython/issues/67596))
   - [Windows Junctions inside the Recycle Bin are being followed through under certain circumstances. · Issue #668 · bleachbit/bleachbit](https://github.com/bleachbit/bleachbit/issues/668)
     - [记一次由Windows文件错误递归删除引起的重大事故，以及对使用Win的Linux爱好者的忠告 - 小众软件官方论坛](https://meta.appinn.net/t/topic/35095)
+
+## [glob: Unix style pathname pattern expansion](https://docs.python.org/3/library/glob.html)
+- `glob.glob` requires `recursive=True` to use `**`, but [`Path.glob`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.glob) does not.

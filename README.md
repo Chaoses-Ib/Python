@@ -25,6 +25,7 @@
     - [Requirements](Build/Package%20Management/pip/Requirements.md)
 
 ## Libraries
+- [Scripts](Libraries/Scripts.md)
 - [Native Data Types](Libraries/Native%20Data%20Types.md)
 - [Iterators](Libraries/Iterators.md)
 - Text

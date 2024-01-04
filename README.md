@@ -37,3 +37,6 @@
 - [GUI](Libraries/GUI/README.md)
   - [Qt](Libraries/GUI/Qt/README.md)
   - [Clipboard](Libraries/GUI/Clipboard.md)
+  - [Gradio](Libraries/GUI/Gradio/README.md)
+  - [Streamlit](Libraries/GUI/Streamlit/README.md)
+  - [→Jupyter Widgets](https://github.com/Chaoses-Ib/ComputerSoftware/blob/main/Programming/Jupyter/IPython/Widgets/README.md)

@@ -3,7 +3,9 @@
 - [Type System](Language/Types/README.md)
   - [Set Types](Language/Types/Set%20Types.md)
   - [Mappings](Language/Types/Mappings.md)
+  - [Enums](Language/Types/Enums.md)
   - [Callable Types](Language/Types/Callable.md)
+  - [Iterators](Language/Types/Iterators.md)
 - Expressions
   - [Atoms](Language/Expressions/Atoms.md)
 - [Variables](Language/Variables.md)

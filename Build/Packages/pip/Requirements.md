@@ -30,6 +30,8 @@ urllib3 @ https://github.com/urllib3/urllib3/archive/refs/tags/1.26.8.zip
 http://wxpython.org/Phoenix/snapshot-builds/wxPython_Phoenix-3.0.3.dev1820+49a8884-cp34-none-win_amd64.whl
 ```
 
+`pip freeze` outputs installed packages in requirements format.
+
 Usage:
 ```sh
 pip3 install -r requirements.txt

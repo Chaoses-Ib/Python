@@ -26,6 +26,7 @@
   - pip
     - [Requirements](Build/Packages/pip/Requirements.md)
   - [Wheel](Build/Packages/Wheel/README.md)
+  - [Hatch](Build/Packages/Hatch/README.md)
 - [Deployment](Build/Deployment/README.md)
   - [PyInstaller](Build/Deployment/PyInstaller/README.md)
   - [PyOxidizer](Build/Deployment/PyOxidizer.md)

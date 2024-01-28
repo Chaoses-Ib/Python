@@ -7,6 +7,10 @@
 ## Classes
 [Custom classes](https://docs.python.org/3/reference/datamodel.html#custom-classes)
 
+- `__dict__`
+
+  [python - `getattr()` versus `__dict__` lookup, which is faster? - Stack Overflow](https://stackoverflow.com/questions/14084897/getattr-versus-dict-lookup-which-is-faster)
+
 - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
   - All methods in Python are effectively `virtual`.
   - `super()`

@@ -1,4 +1,8 @@
 # Deployment
+[Python Packaging User Guide](https://packaging.python.org/)
+
+![](https://packaging.python.org/en/latest/_images/py_pkg_applications.png)
+
 [^v2ex]
 - [PyInstaller](PyInstaller/README.md)
 - [PyOxidizer](PyOxidizer.md)

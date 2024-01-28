@@ -8,6 +8,10 @@ A **regular package** is typically implemented as a directory containing an `__
 
 A **namespace package** is a composite of various [portions](https://docs.python.org/3/glossary.html#term-portion), where each portion contributes a subpackage to the parent package. Portions may reside in different locations on the file system. Portions may also be found in zip files, on the network, or anywhere else that Python searches during import. Namespace packages may or may not correspond directly to objects on the file system; they may be virtual modules that have no concrete representation.
 
+## [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path)
+Only strings should be added to `sys.path`; all other data types are **ignored** during import.
+- [bpo-32642: Allow for PathLike objects in sys.path by sroet - Pull Request #22000 - python/cpython](https://github.com/python/cpython/pull/22000)
+
 ## Intra-package references
 [Modules - Python3 Docs](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
 

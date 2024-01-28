@@ -5,6 +5,12 @@
 
 [asyncio: Asynchronous I/O - Python3 Docs](https://docs.python.org/3/library/asyncio.html)
 
+[Thoughts on infectious systems: async/await and pure : ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/comments/vofiyv/thoughts_on_infectious_systems_asyncawait_and_pure/)
+
+[Designing Libraries for Async and Sync I/O](https://sethmlarson.dev/designing-libraries-for-async-and-sync-io)
+
+[Some Thoughts on Asynchronous Programming --- Nick Coghlan's Python Notes 1.0 documentation](https://python-notes.curiousefficiency.org/en/latest/pep_ideas/async_programming.html)
+
 ## [Awaitable objects](https://docs.python.org/3/reference/datamodel.html#awaitable-objects)
 [Coroutines and Tasks - Python3 Docs](https://docs.python.org/3/library/asyncio-task.html#awaitables)
 - Coroutines
@@ -20,9 +26,11 @@
 
 ## Sync
 - [`nest_asyncio`: Patch asyncio to allow nested event loops](https://github.com/erdewit/nest_asyncio)
+  - ~~[After `apply()` and `asyncio.run()`, Jupyter kernel cannot execute any code - Issue #87](https://github.com/erdewit/nest_asyncio/issues/87)~~ (v1.5.9)
 - [asgiref: ASGI specification and utilities](https://github.com/django/asgiref/)
 - [greenback: Reenter an asyncio or Trio event loop from synchronous code](https://github.com/oremanj/greenback)
 - [syncer: Async to sync converter](https://github.com/miyakogi/syncer)
+- [unasync: The async transformation code.](https://github.com/python-trio/unasync/)
 
 [Wrapping async functions for use in sync code - Async-SIG - Discussions on Python.org](https://discuss.python.org/t/wrapping-async-functions-for-use-in-sync-code/8606)
 

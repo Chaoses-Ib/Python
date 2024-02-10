@@ -11,5 +11,7 @@
 ## [pytest](https://github.com/pytest-dev/pytest)
 > The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
 
+[Test if code is executed from within a py.test session - Stack Overflow](https://stackoverflow.com/questions/25188119/test-if-code-is-executed-from-within-a-py-test-session)
+
 ### Files
 [pytest-datafiles: pytest plugin to create a tmpdir containing a preconfigured set of files and/or directories.](https://github.com/omarkohl/pytest-datafiles)

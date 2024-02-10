@@ -23,3 +23,5 @@ except Exception:
 ```
 
 [Catch and print full Python exception traceback without halting/exiting the program - Stack Overflow](https://stackoverflow.com/questions/3702675/catch-and-print-full-python-exception-traceback-without-halting-exiting-the-prog)
+
+[During handling of the above exception, another exception occurred - Stack Overflow](https://stackoverflow.com/questions/52725278/during-handling-of-the-above-exception-another-exception-occurred)

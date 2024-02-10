@@ -4,6 +4,9 @@
 [python - What are the differences between type() and isinstance()? - Stack Overflow](https://stackoverflow.com/questions/1549801/what-are-the-differences-between-type-and-isinstance)
 > To summarize, `isinstance` caters for inheritance (an instance of a derived class *is an* instance of a base class, too), while checking for equality of `type` does not (it demands identity of types and rejects instances of subtypes, AKA subclasses).
 
+[When is `type(instance)` different from `instance.__class__`? - Stack Overflow](https://stackoverflow.com/questions/42384991/when-is-typeinstance-different-from-instance-class)
+- It is possible `type(x)` and `x.__class__` are not the same object, e.g. when `x` is a proxy object.
+
 ## Classes
 [Custom classes](https://docs.python.org/3/reference/datamodel.html#custom-classes)
 
@@ -75,6 +78,17 @@ Others:
 
 [property](https://docs.python.org/3/library/functions.html#property)
 
+## Proxies and wrappers
+- [wrapt: A Python module for decorators, wrappers and monkey patching.](https://github.com/GrahamDumpleton/wrapt)
+
+  [Better Python Decorators with Wrapt | Scout APM Blog](https://scoutapm.com/blog/better-python-decorators-with-wrapt)
+
+  [Proxies and Wrappers](https://wrapt.readthedocs.io/en/latest/wrappers.html)
+  - [`repr(proxied_object)` doesn't return `repr(self.__wrapped__)` - Issue #90 - GrahamDumpleton/wrapt](https://github.com/GrahamDumpleton/wrapt/issues/90)
+  - [Best way to associate some data with `ObjectProxy`? - Issue #255 - GrahamDumpleton/wrapt](https://github.com/GrahamDumpleton/wrapt/issues/255)
+
+- [objproxies: Proxies and wrappers for ordinary Python objects](https://github.com/neg3ntropy/objproxies)
+
 ## Metaclasses
 [Data model - Python3 Docs](https://docs.python.org/3/reference/datamodel.html#metaclasses)
 
@@ -94,6 +108,13 @@ Others:
   - [namedtuple()](https://docs.python.org/3/library/collections.html#collections.namedtuple)
   - Named tuple instances do not have per-instance dictionaries, so they are lightweight and require no more memory than regular tuples.
 - [dataclasses: Data Classes](https://docs.python.org/3/library/dataclasses.html)
+
+  - [Passing default list argument to dataclasses - Stack Overflow](https://stackoverflow.com/questions/52063759/passing-default-list-argument-to-dataclasses)
+
+    ```python
+    argv: list[str] = dataclasses.field(default_factory=list)
+    ```
+
 - [`TypedDict`](https://docs.python.org/3/library/typing.html#typing.TypedDict)
   - A simple typed namespace. At runtime it is equivalent to a plain dict.
 - [`SimpleNamespace`](https://docs.python.org/3/library/types.html#types.SimpleNamespace)

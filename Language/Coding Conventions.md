@@ -17,6 +17,9 @@ Packages with all uppercase characters : 439 (0.50%)
 Packages with both lower and upper case characters : 11213 (12.79%)
 ```
 
+[Naming conventions, `_` vs `-`; why does "jupyterlab-mathjax3" use a dash? - JupyterLab - Jupyter Community Forum](https://discourse.jupyter.org/t/naming-conventions-vs-why-does-jupyterlab-mathjax3-use-a-dash/15171)
+> There is no typo-squatting danged exactly because PyPI and pip normalises `_` to `-`. Try `pip freeze`: do you see anything with `_`? What is more user-friendly, having consistency with package manager or not? Also, it is a predominant convention to use `-` in PyPI package names.
+
 Hatching's example uses a dash instead of underscore[^hatch].
 
 [^hatch]: [Metadata - Hatch](https://hatch.pypa.io/latest/config/metadata/#name)

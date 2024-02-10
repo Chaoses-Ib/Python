@@ -14,6 +14,8 @@
 
 [python - Function closure vs. callable class - Stack Overflow](https://stackoverflow.com/questions/8966785/function-closure-vs-callable-class)
 
+[makefun](https://smarie.github.io/python-makefun/) ([GitHub](https://github.com/smarie/python-makefun))
+
 ## Functions
 [Function definitions](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
 ```antlr

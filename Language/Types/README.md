@@ -187,6 +187,11 @@ Workarounds:
 
 [Writing and Maintaining Stub Files --- typing documentation](https://typing.readthedocs.io/en/latest/source/writing_stubs.html)
 
+### Generation
+- [Python stub runtime generator](https://github.com/micheleantonazzi/python-stub-runtime-generator)
+
+[Generating stubs to autocomplete dynamic classes? : Python](https://www.reddit.com/r/Python/comments/16pzu2x/generating_stubs_to_autocomplete_dynamic_classes/)
+
 ## Type checkers
 - [Pyright: Static Type Checker for Python](https://github.com/microsoft/pyright)
   - [Pylance infers wrong return type for overloaded function with Unknown arguments - Issue #1377 - microsoft/pylance-release](https://github.com/microsoft/pylance-release/issues/1377)

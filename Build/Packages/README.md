@@ -13,6 +13,8 @@
   - Egg
 - [Wheel](Wheel/README.md)
 
+[packaging: Core utilities for Python packages](https://github.com/pypa/packaging)
+
 ## src layout vs flat layout
 [src layout vs flat layout - Python Packaging User Guide](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)
   
@@ -28,6 +30,20 @@ Pyright will try to resolute the import from both the root directory and the `sr
 [^pyright]: [pyright/docs/import-resolution.md at main - microsoft/pyright](https://github.com/microsoft/pyright/blob/main/docs/import-resolution.md#resolution-order)
 
 ## `pyproject.toml`
+### Project metadata
+[PEP 621 -- Storing project metadata in pyproject.toml | peps.python.org](https://peps.python.org/pep-0621/)
+
+Two fields are required: `name` and `version`.
+
+[importlib.metadata -- Accessing package metadata - Python 3.11 Docs](https://docs.python.org/3.11/library/importlib.metadata.html)
+- Entry points
+
+#### URLs
+[Document recommended keys for `project_urls` - Issue #5947 - pypi/warehouse](https://github.com/pypi/warehouse/issues/5947)
+- [Investigation into "canonical" link for a PyPI repo link - Issue #11 - hugovk/pypi-tools](https://github.com/hugovk/pypi-tools/issues/11)
+
+[PyPI Project URLs Cheatsheet](https://daniel.feldroy.com/posts/2023-08-pypi-project-urls-cheatsheet)
+
 ### Dependencies
 [PEP 735 -- Dependency Groups in pyproject.toml | peps.python.org](https://peps.python.org/pep-0735/)
 
@@ -35,6 +51,18 @@ Pyright will try to resolute the import from both the root directory and the `sr
 
 [pip - How to package a Python module with extras as default? - Stack Overflow](https://stackoverflow.com/questions/60842775/how-to-package-a-python-module-with-extras-as-default)
 - [Support the empty-string extra by di - Pull Request #1503 - pypa/setuptools](https://github.com/pypa/setuptools/pull/1503)
+
+What will happen if a package is installed with extras, but no extras when upgrading?
+
+[Specify `extras_require` with `pip install -e` - Stack Overflow](https://stackoverflow.com/questions/30239152/specify-extras-require-with-pip-install-e)
+- `pip install -e ".[extra]"`
+
+## Resources
+### `importlib.resources`
+[importlib.resources -- Package resource reading, opening and access - Python 3.11 Docs](https://docs.python.org/3.11/library/importlib.resources.html)
+
+### `pkg_resources` (deprecated)
+[Package Discovery and Resource Access using `pkg_resources` - setuptools 69.0.3.post20240124 documentation](https://setuptools.pypa.io/en/latest/pkg_resources.html)
 
 ## Backends
 [The Basics of Python Packaging in Early 2023 - DrivenData Labs](https://drivendata.co/blog/python-packaging-2023)

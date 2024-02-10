@@ -23,7 +23,7 @@
   - [CPython](Build/Implementations/CPython/README.md)
   - [PyScript](Build/Implementations/PyScript.md)
 - [Package Management](Build/Packages/README.md)
-  - pip
+  - [pip](Build/Packages/pip/README.md)
     - [Requirements](Build/Packages/pip/Requirements.md)
   - [Wheel](Build/Packages/Wheel/README.md)
   - [Hatch](Build/Packages/Hatch/README.md)

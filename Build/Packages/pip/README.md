@@ -1,0 +1,2 @@
+# pip
+[in python How to get rid of dist files when pip installing with --target --upgrade? - Stack Overflow](https://stackoverflow.com/questions/70289303/in-python-how-to-get-rid-of-dist-files-when-pip-installing-with-target-upgra)

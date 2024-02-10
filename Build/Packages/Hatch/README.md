@@ -19,3 +19,41 @@ The documentation is too brief, though PDM is worse.
 - [Source distribution](https://hatch.pypa.io/latest/plugins/builder/sdist/)
 
   > When the user has not set any file selection options, all files that are not ignored by your VCS will be included.
+
+[Monorepo support - Issue #233 - pypa/hatch](https://github.com/pypa/hatch/issues/233)
+
+### requirements.txt
+[hatch-requirements-txt: Hatchling plugin to read project dependencies from requirements.txt](https://github.com/repo-helper/hatch-requirements-txt)
+
+```toml
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+```
+
+### Root layout
+```toml
+[tool.hatch.build.targets.sdist]
+packages = ["."]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+exclude = [
+  "*.md",
+  "/images",
+  "/docs",
+  "/examples",
+  "/tests",
+]
+
+[tool.hatch.build.targets.sdist.sources]
+# Package name. Must be an valid Python id (no dashes)
+"." = "mypackage"
+
+[tool.hatch.build.targets.wheel.sources]
+# Same as above
+"." = "mypackage"
+```

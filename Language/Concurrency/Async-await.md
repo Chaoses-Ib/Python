@@ -41,3 +41,8 @@
 [asynchronous - Call async function from sync function, while the synchronous function continues : Python - Stack Overflow](https://stackoverflow.com/questions/55647753/call-async-function-from-sync-function-while-the-synchronous-function-continues)
 
 [python - Wait for async function to complete - Stack Overflow](https://stackoverflow.com/questions/57234827/wait-for-async-function-to-complete)
+
+## Executors
+[concurrent.futures.Executor](https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Executor)
+
+[Python asyncio event loop in a separate thread](https://gist.github.com/dmfigol/3e7d5b84a16d076df02baa9f53271058)

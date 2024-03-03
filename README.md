@@ -2,6 +2,7 @@
 ## [Language](Language/README.md)
 - [Type System](Language/Types/README.md)
   - [Bool](Language/Types/Bool.md)
+  - [Strings](Language/Types/Strings.md)
   - [Set Types](Language/Types/Set%20Types.md)
   - [Mappings](Language/Types/Mappings.md)
   - [Enums](Language/Types/Enums.md)

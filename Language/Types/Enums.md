@@ -12,6 +12,33 @@ Libraries:
 
 [When should I subclass EnumMeta instead of Enum? - Stack Overflow](https://stackoverflow.com/questions/43730305/when-should-i-subclass-enummeta-instead-of-enum)
 
+Creating large enums is slow. About 0.5s / 1000 members.
+
+## Nested enums
+- Default (v3.13)
+
+- `nonmember()` (v3.11)
+
+- aenum
+
+- `.value`
+
+  ```python
+  class _Inside(Enum):
+      Downstairs = 'downstairs'
+      Upstairs = 'upstairs'
+
+  class Location(Enum):
+      Outside = 'outside'
+      Inside = _Inside 
+      
+  print(Location.Inside.value.Downstairs.value)
+  ```
+
+[Enums don't support nested classes - Issue #78157 - python/cpython](https://github.com/python/cpython/issues/78157)
+
+[How to make nested enum also have value - Stack Overflow](https://stackoverflow.com/questions/54488648/how-to-make-nested-enum-also-have-value)
+
 ## Inheritance
 [How to extend Python Enum? - Stack Overflow](https://stackoverflow.com/questions/33679930/how-to-extend-python-enum)
 

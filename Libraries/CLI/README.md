@@ -11,6 +11,10 @@ Library | Help message | Autocomplete | REPL | i18n
 [Python Fire](#python-fire) | Not good | ✔️ | Python | ❌
 [docopt](#docopt) | ✔️ | ✔️[docopt-completion](https://github.com/Infinidat/infi.docopt_completion/) | ❌ | ❌
 
+[Python开发CLI终端相关的库 - shede333 的博客](https://shaowei.xyz/Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/Python%E5%BC%80%E5%8F%91CLI%E7%BB%88%E7%AB%AF%E7%9B%B8%E5%85%B3%E7%9A%84%E5%BA%93/)
+
+[命令行应用 — The Hitchhiker's Guide to Python](https://pythonguidecn.readthedocs.io/zh/latest/scenarios/cli.html)
+
 ## Tranditional
 ### [argparse](https://docs.python.org/3/library/argparse.html)
 The following code is a program that takes a list of integers and produces either the sum or the max:

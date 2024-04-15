@@ -1,5 +1,5 @@
 # GUI
-- [Tkinter](https://docs.python.org/3/library/tkinter.html)
+- [→Tkinter](Tkinter/README.md)
 - Qt
   - [PySide](https://wiki.qt.io/Qt_for_Python)
   - [PyQt](https://riverbankcomputing.com/software/pyqt/)
@@ -7,6 +7,10 @@
 - Web
   - [Remi: Python REMote Interface library](https://github.com/rawpython/remi)
   - [pywebview](https://pywebview.flowrl.com/)
+- BeeWare
+
+  [BeeWare --- BeeWare 0.3.0 documentation](https://docs.beeware.org/en/latest/)
+
 - [Kivy: Cross-platform Python Framework for GUI apps Development](https://kivy.org/)
 - [PySimpleGUI](https://www.pysimplegui.org/)
 

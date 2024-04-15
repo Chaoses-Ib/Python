@@ -1,4 +1,17 @@
 # CPython
+[python/cpython: The Python programming language](https://github.com/python/cpython)
+
+[Python 终于决定要提升一下性能了 - V2EX](https://www.v2ex.com/t/776893)
+> 其实很多时候不是技术问题，反倒是社会学问题，比如社区的组织形态决定他们能贡献何种方式的代码。python 的社区组织形态导致各自为战的工作者对于语法上的小的优化和改动频繁发表意见，而对于 cpython 解释器这类的问题没什么想法。
+
+[安装了 python3.10，满吃惊的 - V2EX](https://www.v2ex.com/t/843931)
+> 在我印象中，CPython 在 3.6 以后的版本中, 对虚拟机内部的实现做了大量的修改， 比如说 FastCall 机制等。 这些确实能提高 Python 本身的性能。但是对于 C/C++实现的第三方库而言, 如果想获得性能提升， 必须主动适配这些新特性。
+
+## Embedding
+[Extending and Embedding the Python Interpreter --- Python 3 documentation](https://docs.python.org/3/extending/index.html#extending-index)
+
+[1\. Embedding Python in Another Application --- Python 3 documentation](https://docs.python.org/3/extending/embedding.html#embedding-python-in-c)
+
 ## Bindings
 ### C++
 - [boostorg/python: Boost.org python module](https://github.com/boostorg/python)

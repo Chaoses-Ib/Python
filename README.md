@@ -54,6 +54,7 @@
 - [File Systems](Libraries/File%20Systems/README.md)
 - [CLI](Libraries/CLI/README.md)
   - [Click](Libraries/CLI/Click.md)
+- [TUI](Libraries/TUI/README.md)
 - [GUI](Libraries/GUI/README.md)
   - [Tkinter](Libraries/GUI/Tkinter/README.md)
   - [Qt](Libraries/GUI/Qt/README.md)

@@ -38,6 +38,28 @@ Two fields are required: `name` and `version`.
 [importlib.metadata -- Accessing package metadata - Python 3.11 Docs](https://docs.python.org/3.11/library/importlib.metadata.html)
 - Entry points
 
+### Version
+[Version specifiers - Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/version-specifiers/)
+- `[N!]N(.N)*[{a|b|rc}N][.postN][.devN]`
+  - `^([1-9][0-9]*!)?(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))*((a|b|rc)(0|[1-9][0-9]*))?(\.post(0|[1-9][0-9]*))?(\.dev(0|[1-9][0-9]*))?$`
+- Epoch segment
+- Release segment
+- Pre-release segment
+
+  Pre-release separators:
+  > Pre-releases should allow a `.`, `-`, or `_` separator between the release segment and the pre-release segment. The normal form for this is without a separator. This allows versions such as `1.1.a1` or `1.1-a1` which would be normalized to `1.1a1`. It should also allow a separator to be used between the pre-release signifier and the numeral. This allows versions such as `1.0a.1` which would be normalized to `1.0a1`.
+
+  Pre-release spelling:
+  > Pre-releases allow the additional spellings of `alpha`, `beta`, `c`, `pre`, and `preview` for `a`, `b`, `rc`, `rc`, and `rc` respectively. This allows versions such as `1.1alpha1`, `1.1beta2`, or `1.1c3` which normalize to `1.1a1`, `1.1b2`, and `1.1rc3`. In every case the additional spelling should be considered equivalent to their normal forms.
+
+  Implicit pre-release number:
+  > Pre releases allow omitting the numeral in which case it is implicitly assumed to be `0`. The normal form for this is to include the `0` explicitly. This allows versions such as `1.2a` which is normalized to `1.2a0`.
+
+  [CPython](https://www.python.org/downloads/release/python-3120a1/) and most packages start pre-release numbers at 1 instead of 0.
+
+- Post-release segment
+- Development release segment
+
 #### URLs
 [Document recommended keys for `project_urls` - Issue #5947 - pypi/warehouse](https://github.com/pypi/warehouse/issues/5947)
 - [Investigation into "canonical" link for a PyPI repo link - Issue #11 - hugovk/pypi-tools](https://github.com/hugovk/pypi-tools/issues/11)

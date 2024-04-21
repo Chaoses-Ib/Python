@@ -6,6 +6,9 @@
 ## Command line
 [1\. Command line and environment --- Python 3 documentation](https://docs.python.org/3/using/cmdline.html#using-on-general)
 
+## Environment variables
+[Command line and environment - Python3 Docs](https://docs.python.org/3/using/cmdline.html#environment-variables)
+
 ## Exit
 - Ctrl+D（Ctrl+Z）
 - `quit()`

@@ -22,6 +22,8 @@ The documentation is too brief, though PDM is worse.
 
 [Monorepo support - Issue #233 - pypa/hatch](https://github.com/pypa/hatch/issues/233)
 
+[Support for Editable Dependencies - Issue #588 - pypa/hatch](https://github.com/pypa/hatch/issues/588)
+
 ### requirements.txt
 [hatch-requirements-txt: Hatchling plugin to read project dependencies from requirements.txt](https://github.com/repo-helper/hatch-requirements-txt)
 

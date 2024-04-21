@@ -92,8 +92,35 @@ What will happen if a package is installed with extras, but no extras when upgra
 
 [Pipenv, pip-tools, PDM, or Poetry? : Python](https://www.reddit.com/r/Python/comments/16qz8mx/pipenv_piptools_pdm_or_poetry/)
 
+## Local installs
+[Local project installs - pip documentation](https://pip.pypa.io/en/stable/topics/local-project-installs/)
+
+Certain build backends (eg: `setuptools`) will litter the project directory with secondary build artifacts (eg: `.egg-info` directories).
+- [Change .egg-info directory with pip install --editable - Stack Overflow](https://stackoverflow.com/questions/54260307/change-egg-info-directory-with-pip-install-editable)
+
+`egg_base`:
+```toml
+[tool.distutils.egg_info]
+egg_base = "target"
+```
+
+[PEP 3147 -- PYC Repository Directories | peps.python.org](https://peps.python.org/pep-3147/)
+- `PYTHONDONTWRITEBYTECODE=1`
+
+  > There’s no in-memory .pyc file, but there is the in-memory compiled code.
+
+  [Cpython behavior regarding pycache folder on read-only volume - Python Help - Discussions on Python.org](https://discuss.python.org/t/cpython-behavior-regarding-pycache-folder-on-read-only-volume/30992)
+
+  [large memory overhead when pyc is recompiled - Issue #68273 - python/cpython](https://github.com/python/cpython/issues/68273)
+
+- `PYTHONPYCACHEPREFIX`
+
+  [python - Changing the directory where .pyc files are created - Stack Overflow](https://stackoverflow.com/questions/3522079/changing-the-directory-where-pyc-files-are-created)
+
 ## Editable installs
 [Development Mode (a.k.a. "Editable Installs") - setuptools documentation](https://setuptools.pypa.io/en/latest/userguide/development_mode.html)
+
+[How to install a package using pip in editable mode with pyproject.toml? - Stack Overflow](https://stackoverflow.com/questions/69711606/how-to-install-a-package-using-pip-in-editable-mode-with-pyproject-toml)
 
 > ERROR: File "setup.py" or "setup.cfg" not found. Directory cannot be installed in editable mode: C:\example
 (A "pyproject.toml" file was found, but editable mode currently requires a setuptools-based build.)
@@ -108,5 +135,9 @@ python -m pip install --upgrade pip
 [Entry Points - setuptools documentation](https://setuptools.pypa.io/en/latest/userguide/entry_point.html)
 
 ## [PyPI](https://pypi.org/)
+- Packages cannot have direct dependencies
+
+  [November 29, 2022 - PyPI Doesn't Allow Git Repo Dependencies | David Chan - Today I Learned (TIL)](https://til.dchan.cc/posts/11-29-2022/)
+
 [TestPyPI - The Python Package Index](https://test.pypi.org/)
 - Hatch: `hatch publish -r test`

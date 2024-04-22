@@ -53,6 +53,8 @@
 - Text
   - [Regex](Libraries/Text/Regex.md)
   - [JSON](Libraries/Text/JSON.md)
+- [I/O](Libraries/IO/README.md)
+  - [Logging](Libraries/IO/Logging.md)
 - [File Systems](Libraries/File%20Systems/README.md)
 - [CLI](Libraries/CLI/README.md)
   - [Click](Libraries/CLI/Click.md)

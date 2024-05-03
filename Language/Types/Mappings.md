@@ -8,3 +8,5 @@ Dictionaries preserve insertion order, meaning that keys will be produced in the
 - [frozendict: A simple immutable mapping for python](https://github.com/slezica/python-frozendict)
 - [types.MappingProxyType](https://docs.python.org/3/library/types.html#types.MappingProxyType)
   - `hash()` (Python 3.12)
+
+[Box: Python dictionaries with advanced dot notation access](https://github.com/cdgriffith/Box)

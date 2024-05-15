@@ -42,3 +42,20 @@ funcname                  ::=  identifier
 [Python dynamic function creation with custom names - Stack Overflow](https://stackoverflow.com/questions/13184281/python-dynamic-function-creation-with-custom-names)
 
 [How to get function object inside a function (Python) - Stack Overflow](https://stackoverflow.com/questions/24250118/how-to-get-function-object-inside-a-function-python)
+
+## Cache
+- [functools: Higher-order functions and operations on callable objects - Python3 Docs](https://docs.python.org/3/library/functools.html#functools.cache)
+
+  [Don't use lru\_cache. It stores pointers to the values, so if a mutable value is ... | Hacker News](https://news.ycombinator.com/item?id=27780704)
+
+- [cachetools: Extensible memoizing collections and decorators](https://github.com/tkem/cachetools)
+  - `MutableMapping`
+    - `dict`
+    - `Cache`
+- [cacheout: A caching library for Python](https://github.com/dgilland/cacheout)
+- [python-memoization: A powerful caching library for Python, with TTL support and multiple algorithm options.](https://github.com/lonelyenvoy/python-memoization)
+- [cacheing: Pure Python Caching Library providing Redis-inspired eviction APIs and Per-Item TTL's.](https://github.com/breid48/cacheing)
+- [Caches: Python caching backed by Redis](https://github.com/jaymon/caches)
+
+Persistent:
+- [Cachier: Persistent, stale-free, local and cross-machine caching for Python functions.](https://github.com/python-cachier/cachier)

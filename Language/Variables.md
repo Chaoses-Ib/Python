@@ -54,6 +54,15 @@ Jupyter Notebook:
 
   [Python: which types support weak references? - Stack Overflow](https://stackoverflow.com/questions/52011430/python-which-types-support-weak-references)
 
+- `weakref.proxy` is not enough to prevent others from referencing the original object. The references can be retrieved through its members.
+  - [ ] Deep weakref proxy
+
+  [Acquiring a regular reference from a weakref proxy in python - Stack Overflow](https://stackoverflow.com/questions/19621036/acquiring-a-regular-reference-from-a-weakref-proxy-in-python)
+
+  [deepcopy of weakref proxies - Issue #87418 - python/cpython](https://github.com/python/cpython/issues/87418)
+
+  [python performs a deepcopy of a weakref.proxy's content. Why? Which entity owns the reference? - Stack Overflow](https://stackoverflow.com/questions/77351940/python-performs-a-deepcopy-of-a-weakref-proxys-content-why-which-entity-owns)
+
 - `WeakKeyDictionary`
 
   > This can be used to associate additional data with an object owned by other parts of an application without adding attributes to those objects.

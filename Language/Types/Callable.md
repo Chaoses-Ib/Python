@@ -43,6 +43,9 @@ funcname                  ::=  identifier
 
 [How to get function object inside a function (Python) - Stack Overflow](https://stackoverflow.com/questions/24250118/how-to-get-function-object-inside-a-function-python)
 
+[How can I find the number of arguments of a Python function? - Stack Overflow](https://stackoverflow.com/questions/847936/how-can-i-find-the-number-of-arguments-of-a-python-function)
+- `len(inspect.signature(f).parameters)`
+
 ## Cache
 - [functools: Higher-order functions and operations on callable objects - Python3 Docs](https://docs.python.org/3/library/functools.html#functools.cache)
 

@@ -1,4 +1,18 @@
-# venv
+# Environments
+- [Environment variables](#environment-variables)
+- [`pyvenv.cfg` (virtual environments)](#virtual-environments)
+
+[Interpreter independent isolated/virtual environments - Packaging - Discussions on Python.org](https://discuss.python.org/t/interpreter-independent-isolated-virtual-environments/5378)
+
+## [Environment variables](https://docs.python.org/3/using/cmdline.html#environment-variables)
+- `PYTHONHOME`
+- `PYTHONPATH`
+
+## Virtual environments
+[PEP 405 -- Python Virtual Environments | peps.python.org](https://peps.python.org/pep-0405/)
+- `pyvenv.cfg`
+
+### venv
 [venv: Creation of virtual environments - Python3 Docs](https://docs.python.org/3/library/venv.html)
 - Not considered as movable or copyable – you just recreate the same environment in the target location.
 
@@ -6,7 +20,7 @@
 
 `python3 -m venv my-env`
 
-## Activate
+### Activating
 1. Set `VIRTUAL_ENV` to `__VENV_DIR__`
 
    > Since explicitly activating a virtual environment is not required to use it, `VIRTUAL_ENV` cannot be relied upon to determine whether a virtual environment is being used.
@@ -47,14 +61,4 @@ fn detect_python_executable(venv: impl AsRef<Path>) -> PathBuf {
         venv.join("bin").join("python")
     }
 }
-```
-
-## Ubuntu
-[New Python Versions : "deadsnakes" team](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
-
-[deadsnakes/issues: Issues for https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa](https://github.com/deadsnakes/issues)
-```sh
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install libpython3.6
 ```

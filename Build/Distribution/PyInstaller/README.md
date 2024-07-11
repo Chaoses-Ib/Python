@@ -1,5 +1,5 @@
-# PyInstaller
-[pyinstaller/pyinstaller: Freeze (package) Python programs into stand-alone executables](https://github.com/pyinstaller/pyinstaller)
+# [PyInstaller](https://github.com/pyinstaller/pyinstaller)
+> Freeze (package) Python programs into stand-alone executables
 
 `--onefile`
 

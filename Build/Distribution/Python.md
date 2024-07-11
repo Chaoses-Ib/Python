@@ -1,30 +1,28 @@
-# Deployment
-[Python Packaging User Guide](https://packaging.python.org/)
+# Python Distribution
+- [→Linux](#linux)
+- [→Windows](#windows)
+- [→macOS](#macos)
+- [Python Standalone Builds: Produce redistributable builds of Python](https://github.com/indygreg/python-build-standalone)
+  - `pip`, `venv` included
 
-![](https://packaging.python.org/en/latest/_images/py_pkg_applications.png)
+    [Windows archive is missing ensurepip, venv, tests and tk - Issue #19 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/19)
 
-[^v2ex]
-- [PyInstaller](PyInstaller/README.md)
-- [PyOxidizer](PyOxidizer.md)
+  - `install_only` includes `include`, `libs`, Tcl/tk and PDB
 
-  PyOxidizer often skips extracting files and loads modules directly from memory using zero-copy. This makes PyOxidizer executables significantly faster to start when this feature is employed.
+  - Affected by `PYTHONHOME`, `PYTHONPATH`
 
-  - [Python Standalone Builds: Produce redistributable builds of Python](https://github.com/indygreg/python-build-standalone)
-    - `pip`, `venv` included
+    [removing PYTHONHOME dependency from a static libpython? - Issue #57 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/57)
 
-      [Windows archive is missing ensurepip, venv, tests and tk - Issue #19 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/19)
+## Linux
+### Ubuntu
+[New Python Versions : "deadsnakes" team](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
 
-    - `install_only` includes `include`, `libs`, Tcl/tk and PDB
-  
-    - Affected by `PYTHONHOME`, `PYTHONPATH`
-  
-      [removing PYTHONHOME dependency from a static libpython? - Issue #57 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/57)
-  
-  - [The PyOxy Python Runner](https://pyoxidizer.readthedocs.io/en/latest/pyoxy.html)
-
-[^v2ex]: [Python 现代化打包应用到 exe 的方式？ - V2EX](https://www.v2ex.com/t/859122)
-
-## [→Embedding](../Implementations/CPython/README.md#embedding)
+[deadsnakes/issues: Issues for https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa](https://github.com/deadsnakes/issues)
+```sh
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install libpython3.6
+```
 
 ## Windows
 [Using Python on Windows - Python3 Docs](https://docs.python.org/3/using/windows.html)

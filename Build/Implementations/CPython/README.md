@@ -35,15 +35,6 @@ venv:
 - [Make pyvenv style virtual environments easier to configure when embedding Python - Issue #66409 - python/cpython](https://github.com/python/cpython/issues/66409)
 - [Make it easier to use a venv with an embedded Python interpreter - Issue #79887 - python/cpython](https://github.com/python/cpython/issues/79887)
 
-## Environment
-- [Environment variables](https://docs.python.org/3/using/cmdline.html#environment-variables)
-  - `PYTHONHOME`
-- `pyvenv.cfg`
-
-  [PEP 405 -- Python Virtual Environments | peps.python.org](https://peps.python.org/pep-0405/)
-
-[Interpreter independent isolated/virtual environments - Packaging - Discussions on Python.org](https://discuss.python.org/t/interpreter-independent-isolated-virtual-environments/5378)
-
 ## Bindings
 ### C++
 - [boostorg/python: Boost.org python module](https://github.com/boostorg/python)

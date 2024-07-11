@@ -1,5 +1,5 @@
-# PyOxidizer
-[indygreg/PyOxidizer: A modern Python application packaging and distribution tool](https://github.com/indygreg/PyOxidizer)
+# [PyOxidizer](https://github.com/indygreg/PyOxidizer)
+> A modern Python application packaging and distribution tool
 
 [PyOxidizer for Rust Developers](https://pyoxidizer.readthedocs.io/en/stable/pyoxidizer_rust.html)
 

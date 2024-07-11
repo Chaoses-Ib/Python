@@ -1,5 +1,6 @@
 # venv
 [venv: Creation of virtual environments - Python3 Docs](https://docs.python.org/3/library/venv.html)
+- Not considered as movable or copyable – you just recreate the same environment in the target location.
 
 [Virtual Environments and Packages - Python3 Docs](https://docs.python.org/3/tutorial/venv.html)
 

@@ -1,6 +1,15 @@
 # pip
 [pip documentation](https://pip.pypa.io/en/stable/)
 
+[Installation - pip documentation](https://pip.pypa.io/en/stable/installation/)
+- Built-in
+- `ensurepip`
+- `get-pip.py`
+
+  > You may be wondering what this giant blob of binary data here is, you might even be worried that we're up to something nefarious (good for you for being paranoid!). This is a base85 encoding of a zip file, this zip file contains an entire copy of pip (version 24.1.2).
+
+  - `min_version = (3, 8)`
+
 [in python How to get rid of dist files when pip installing with --target --upgrade? - Stack Overflow](https://stackoverflow.com/questions/70289303/in-python-how-to-get-rid-of-dist-files-when-pip-installing-with-target-upgra)
 
 ## API

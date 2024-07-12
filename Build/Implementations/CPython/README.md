@@ -1,6 +1,22 @@
 # CPython
 [python/cpython: The Python programming language](https://github.com/python/cpython)
 
+## Versions
+[Status of Python versions](https://devguide.python.org/versions/)
+
+Breaking changes:
+- [Cold-blooded software | Hacker News](https://news.ycombinator.com/item?id=38793206)
+  
+  > Python is a really bad example of cold blooded software. There is constant breaking changes with it (both runtime and tooling).
+
+  > The Python 3.11 release notes have a pretty lengthy list of removed or changed Python and C APIs followed by guidance on porting to 3.11, which implies potentially breaking changes.
+
+  > Python's changes between releases are not limited to removing deprecated APIs. Sometimes semantics changes in breaking ways, or new reserved words crop up, etc. etc. It certainly is Russian roulette trying to run python code on any version other than the one it was written for.
+
+  > For me switching to Python 3.11 was really tough because of various legacy stuff removals (like coroutine decorators etc). While my code did not use these, the dependencies did. For some dependencies I had to switch to different libraries altogether - and that required rewriting my code to work with them.
+  > 
+  > There was also some time in the past when async became a keyword. It turned out many packages had variables named async and that caused quite a bit of pain too.
+
 [Python 终于决定要提升一下性能了 - V2EX](https://www.v2ex.com/t/776893)
 > 其实很多时候不是技术问题，反倒是社会学问题，比如社区的组织形态决定他们能贡献何种方式的代码。python 的社区组织形态导致各自为战的工作者对于语法上的小的优化和改动频繁发表意见，而对于 cpython 解释器这类的问题没什么想法。
 

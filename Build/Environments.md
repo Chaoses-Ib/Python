@@ -4,6 +4,8 @@
 
 [Interpreter independent isolated/virtual environments - Packaging - Discussions on Python.org](https://discuss.python.org/t/interpreter-independent-isolated-virtual-environments/5378)
 
+[sysconfig: Provide access to Python's configuration information - Python3 Docs](https://docs.python.org/3/library/sysconfig.html)
+
 ## [Environment variables](https://docs.python.org/3/using/cmdline.html#environment-variables)
 - `PYTHONHOME`
 - `PYTHONPATH`

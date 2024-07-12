@@ -52,6 +52,8 @@ sudo apt install libpython3.6
 
     [venv or virtualenv with embedded python - Stack Overflow](https://stackoverflow.com/questions/70008011/venv-or-virtualenv-with-embedded-python)
 
+    可能跟 embedded package 用了 zip 打包的 stdlib 有关？
+
   - Not affected by `PYTHONHOME`, `PYTHONPATH`
 
   - The embedded distribution does not include the [Microsoft C Runtime](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) and it is the responsibility of the application installer to provide this.

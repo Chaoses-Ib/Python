@@ -3,7 +3,13 @@
 
 [Installation - pip documentation](https://pip.pypa.io/en/stable/installation/)
 - Built-in
+
 - `ensurepip`
+  - Used by `venv`.
+  - Cannot be used without environment variable `SystemRoot`.
+
+    [python - Error when creating venv, Error: Command '-Im', 'ensurepip', '--upgrade', '--default-pip'\]' returned non-zero exit status 1 - Stack Overflow](https://stackoverflow.com/questions/69594088/error-when-creating-venv-error-command-im-ensurepip-upgrade-def)
+
 - `get-pip.py`
 
   > You may be wondering what this giant blob of binary data here is, you might even be worried that we're up to something nefarious (good for you for being paranoid!). This is a base85 encoding of a zip file, this zip file contains an entire copy of pip (version 24.1.2).

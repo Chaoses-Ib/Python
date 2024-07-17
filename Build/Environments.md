@@ -10,6 +10,8 @@
 - `PYTHONHOME`
 - `PYTHONPATH`
 
+All start with `PYTHON`.
+
 ## Virtual environments
 [PEP 405 -- Python Virtual Environments | peps.python.org](https://peps.python.org/pep-0405/)
 - `pyvenv.cfg`
@@ -21,6 +23,11 @@
 [Virtual Environments and Packages - Python3 Docs](https://docs.python.org/3/tutorial/venv.html)
 
 `python3 -m venv my-env`
+- If `--without-pip` is used, there will be no pip even with `--system-site-packages`.
+
+  [`ensurepip`](Packages/pip/README.md) will still be called even with `--system-site-packages` and pip installed.
+
+  [How to get "python -m venv" to directly install latest pip version - Stack Overflow](https://stackoverflow.com/questions/51720909/how-to-get-python-m-venv-to-directly-install-latest-pip-version)
 
 ### Activating
 1. Set `VIRTUAL_ENV` to `__VENV_DIR__`

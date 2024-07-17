@@ -3,15 +3,22 @@
 - [→Windows](#windows)
 - [→macOS](#macos)
 - [Python Standalone Builds: Produce redistributable builds of Python](https://github.com/indygreg/python-build-standalone)
-  - `pip`, `venv` included
+  - `full` includes `PYTHON.json`, `build`, `install`, `licenses`
+    - `build` includes `.obj` files
+    - `install` (`install_only`) includes `include`, `libs`, Tcl/tk and PDB
+      - `pip`, `venv` included
 
-    [Windows archive is missing ensurepip, venv, tests and tk - Issue #19 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/19)
-
-  - `install_only` includes `include`, `libs`, Tcl/tk and PDB
+        [Windows archive is missing ensurepip, venv, tests and tk - Issue #19 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/19)
+      - DLLs: Include `_test*.pyd`, `_ctypes_test.pyd` (0.5 MiB)
+      - Lib: Include `.py` and `__pycache__`
 
   - Affected by `PYTHONHOME`, `PYTHONPATH`
 
     [removing PYTHONHOME dependency from a static libpython? - Issue #57 - indygreg/python-build-standalone](https://github.com/indygreg/python-build-standalone/issues/57)
+
+  - Windows: `*-windows-msvc-shared`
+
+    > `*-windows-msvc-static` builds are extremely brittle and have several known incompatibilities. We recommend not using them unless you have comprehensive test coverage and have confidence they work for your use case.
 
 ## Linux
 ### Ubuntu
@@ -53,6 +60,8 @@ sudo apt install libpython3.6
     [venv or virtualenv with embedded python - Stack Overflow](https://stackoverflow.com/questions/70008011/venv-or-virtualenv-with-embedded-python)
 
     可能跟 embedded package 用了 zip 打包的 stdlib 有关？
+
+  - All standard libraries are in `python3*.zip` and only `.pyc`.
 
   - Not affected by `PYTHONHOME`, `PYTHONPATH`
 

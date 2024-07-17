@@ -17,6 +17,12 @@
 
   - [Use Windows 7 taskbar API to show progress - Issue #442](https://github.com/tqdm/tqdm/issues/442)
 
+  - Downloading
+  
+    [Progress Bar while download file over http with Requests - Stack Overflow](https://stackoverflow.com/questions/37573483/progress-bar-while-download-file-over-http-with-requests)
+
+    [requests download file with a tqdm progress bar](https://gist.github.com/yanqd0/c13ed29e29432e3cf3e7c38467f42f51)
+
 - `print()`
 
   ```python

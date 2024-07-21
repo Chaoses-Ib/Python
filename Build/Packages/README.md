@@ -119,14 +119,18 @@ What will happen if a package is installed with extras, but no extras when upgra
 ## Local installs
 [Local project installs - pip documentation](https://pip.pypa.io/en/stable/topics/local-project-installs/)
 
-Certain build backends (eg: `setuptools`) will litter the project directory with secondary build artifacts (eg: `.egg-info` directories).
+Certain build backends (eg: `setuptools`) will litter the project directory with secondary build artifacts (eg: `.egg-info`, `build` and `dist` directories).
+- [Installing, Building a package - generates unnecessary files? .egg-info/ build/ - Issue #4198 - pypa/setuptools](https://github.com/pypa/setuptools/issues/4198)
+- [setup.py leaves build, dist, .egg-info etc + even clean doesn't remove them - Issue #1347 - pypa/setuptools](https://github.com/pypa/setuptools/issues/1347)
+- [\[FR\] Automatically clean-up egg-info left in directory on isolated builds - Issue #3573 - pypa/setuptools](https://github.com/pypa/setuptools/issues/3573)
 - [Change .egg-info directory with pip install --editable - Stack Overflow](https://stackoverflow.com/questions/54260307/change-egg-info-directory-with-pip-install-editable)
 
-`egg_base`:
-```toml
-[tool.distutils.egg_info]
-egg_base = "target"
-```
+  `egg_base`:
+  ```toml
+  [tool.distutils.egg_info]
+  egg_base = "target"
+  ```
+- [Incorrect permissions on \*.egg-info directory - Issue #1328 - pypa/setuptools](https://github.com/pypa/setuptools/issues/1328)
 
 [PEP 3147 -- PYC Repository Directories | peps.python.org](https://peps.python.org/pep-3147/)
 - `PYTHONDONTWRITEBYTECODE=1`

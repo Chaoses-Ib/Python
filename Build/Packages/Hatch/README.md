@@ -14,6 +14,8 @@
 The documentation is too brief, though PDM is worse.
 
 ## [Hatchling](https://github.com/pypa/hatch/tree/master/backend)
+1.6 MiB
+
 - [Wheel](https://hatch.pypa.io/latest/plugins/builder/wheel/)
 
 - [Source distribution](https://hatch.pypa.io/latest/plugins/builder/sdist/)

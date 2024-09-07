@@ -82,6 +82,10 @@ What will happen if a package is installed with extras, but no extras when upgra
 - `pip install -e ".[extra]"`
 
 ## Resources
+[Easy and recommended way to get path of datafile within package? - Python Help - Discussions on Python.org](https://discuss.python.org/t/easy-and-recommended-way-to-get-path-of-datafile-within-package/20581)
+
+[Find path of module without importing in Python - Stack Overflow](https://stackoverflow.com/questions/4693608/find-path-of-module-without-importing-in-python)
+
 ### `importlib.resources`
 [importlib.resources -- Package resource reading, opening and access - Python 3.11 Docs](https://docs.python.org/3.11/library/importlib.resources.html)
 
@@ -161,6 +165,10 @@ python -m pip install --upgrade pip
 [Entry points specification - Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/entry-points/)
 
 [Entry Points - setuptools documentation](https://setuptools.pypa.io/en/latest/userguide/entry_point.html)
+
+[importlib.metadata -- Accessing package metadata - Python 3.11 Docs](https://docs.python.org/3.11/library/importlib.metadata.html)
+- Can get package path by `importlib.util.find_spec(entry_point.module).origin` (or `submodule_search_locations[0]`)
+- [Get entry point script file location in setuputils package? - Stack Overflow](https://stackoverflow.com/questions/25066084/get-entry-point-script-file-location-in-setuputils-package)
 
 ## [PyPI](https://pypi.org/)
 - Packages cannot have direct dependencies

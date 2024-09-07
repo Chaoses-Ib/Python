@@ -29,6 +29,10 @@ urllib3 @ https://github.com/urllib3/urllib3/archive/refs/tags/1.26.8.zip
 # It is possible to refer to URLs.
 http://wxpython.org/Phoenix/snapshot-builds/wxPython_Phoenix-3.0.3.dev1820+49a8884-cp34-none-win_amd64.whl
 ```
+Git:
+- `git+https://github.com/Chaoses-Ib/ComfyScript.git`
+- `comfy-script[default] @ git+https://github.com/Chaoses-Ib/ComfyScript.git`
+- `git+https://github.com/Chaoses-Ib/ComfyScript#egg=ComfyScript[default]`
 
 `pip freeze` outputs installed packages in requirements format.
 

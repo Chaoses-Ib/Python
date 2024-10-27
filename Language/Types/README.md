@@ -142,6 +142,12 @@ Others:
 
 What is the type of a type (returned by `type()`)?
 
+- What is the type hint of a class itself instead of its instances?
+  - `Type[Class]`
+  - `type[Class]` (Python 3.9+)
+
+  [python - How to annotate a type that's a class object (instead of a class instance)? - Stack Overflow](https://stackoverflow.com/questions/41417679/how-to-annotate-a-type-thats-a-class-object-instead-of-a-class-instance)
+
 [python - collections.Iterable vs typing.Iterable in type annotation and checking for Iterable - Stack Overflow](https://stackoverflow.com/questions/52827463/collections-iterable-vs-typing-iterable-in-type-annotation-and-checking-for-iter)
 - `typing`
   ```python
@@ -195,6 +201,15 @@ Workarounds:
   This also makes `|` (`Union[]`) can be used on Python 3.7.
 - [PEP 673 -- Self Type | peps.python.org](https://peps.python.org/pep-0673/) (Python 3.11)
 - [PEP 649 -- Deferred Evaluation Of Annotations Using Descriptors | peps.python.org](https://peps.python.org/pep-0649/) (Python 3.13)
+
+### `TYPE_CHECKING`
+```python
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import ...
+```
+[Why if `TYPE_CHECKING`? | ★❤✰ Vicki Boykis ★❤✰](https://vickiboykis.com/2023/12/11/why-if-type_checking/)
 
 ## Type stubs
 [Type Stubs --- typing documentation](https://typing.readthedocs.io/en/latest/source/stubs.html)

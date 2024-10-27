@@ -1,6 +1,9 @@
 # Modules
 [Modules - Python3 Docs](https://docs.python.org/3/tutorial/modules.html)
 
+- Class cannot inherit module
+- [Add `__getitem__` to module - Stack Overflow](https://stackoverflow.com/questions/29064125/add-getitem-to-module)
+
 ## Packages
 A **regular package** is typically implemented as a directory containing an `__init__.py` file. When a regular package is imported, this `__init__.py` file is implicitly executed, and the objects it defines are bound to names in the package's namespace. The `__init__.py` file can contain the same Python code that any other module can contain, and Python will add some additional attributes to the module when it is imported.
 

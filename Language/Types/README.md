@@ -102,6 +102,7 @@ Others:
 > - plain old bespoke objects hand-crafted for every struct type
 > - sequences like `tuple` and `list` with implied meanings for each position/slot (archaic but extremely common)
 > - etc.
+> 
 > So much for "There should be one---and preferably only one---obvious way to do it."[^struct-so]
 
 - [`NamedTuple`](https://docs.python.org/3/library/typing.html#typing.NamedTuple)
@@ -121,6 +122,7 @@ Others:
   - Unhashable.
   - Does not support item assignment.
 - `dict`
+- [`Enum`](Enums.md)
 
 > When your data structure needs to/can be **immutable, hashable, iterable, unpackable, comparable then you can use `NamedTuple`**. If you need something **more complicated, for example, a possibility of inheritance** for your data structure then use `Dataclass`.
 

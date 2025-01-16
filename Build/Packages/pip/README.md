@@ -27,3 +27,14 @@
 > 3. pip assumes that once it has finished its work, the process will terminate. It doesn't need to handle the possibility that other code will continue to run after that point, so (for example) calling pip twice in the same process is likely to have issues.
 
 [pip-api: An unofficial, importable pip API](https://github.com/di/pip-api)
+
+## Data
+- `%LOCALAPPDATA%\pip`
+  - `cache`: [pip cache - pip documentation](https://pip.pypa.io/en/stable/cli/pip_cache/)
+    ```sh
+    python -m pip cache dir
+    python -m pip cache info
+    python -m pip cache list [<pattern>] [--format=[human, abspath]]
+    python -m pip cache remove <pattern>
+    python -m pip cache purge
+    ```

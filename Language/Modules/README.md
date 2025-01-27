@@ -20,6 +20,22 @@ Only strings should be added to `sys.path`; all other data types are **ignored**
 
 [importlib --- The implementation of import - Python3 Docs](https://docs.python.org/3/library/importlib.html#module-importlib.util)
 
+## Visibility
+- `_impl` pattern
+
+  `__init__.py`:
+  ```python
+  from ._impl import *
+  ```
+  `_impl.py`:
+  ```python
+  __all__ = [...]
+  ```
+
+  [refactor(runtime/util): hide nodes imports to avoid overwhelm the sug... - Chaoses-Ib/ComfyScript@cd2d715](https://github.com/Chaoses-Ib/ComfyScript/commit/cd2d715c596609a0f17bfb81214f68a98dce5aa9)
+
+[python - Hide external modules when importing a module (e.g. regarding code-completion) - Stack Overflow](https://stackoverflow.com/questions/16509012/hide-external-modules-when-importing-a-module-e-g-regarding-code-completion)
+
 ## Intra-package references
 [Modules - Python3 Docs](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
 

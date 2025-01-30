@@ -1,12 +1,30 @@
 # Variables
 [Execution model - Python3 Docs](https://docs.python.org/3/reference/executionmodel.html)
 
+## Scopes
 If a name is bound in a block, it is a local variable of that block, unless declared as [`nonlocal`](https://docs.python.org/3/reference/simple_stmts.html#nonlocal) or [`global`](https://docs.python.org/3/reference/simple_stmts.html#global). If a name is bound at the module level, it is a global variable. (The variables of the module code block are local and global.) If a variable is used in a code block but not defined there, it is a *free variable*.
 
 [python - What's the difference between globals(), locals(), and vars()? - Stack Overflow](https://stackoverflow.com/questions/7969949/whats-the-difference-between-globals-locals-and-vars)
 
 [python - How to make a cross-module variable? - Stack Overflow](https://stackoverflow.com/questions/142545/how-to-make-a-cross-module-variable)
 - `__builtins__`
+
+### `UnboundLocalError`
+[Why am I getting an `UnboundLocalError` when the variable has a value?](https://docs.python.org/3/faq/programming.html#why-am-i-getting-an-unboundlocalerror-when-the-variable-has-a-value)
+```python
+x = 10
+def foo():
+    if False:
+        x = 1
+    print(x)
+    # UnboundLocalError
+foo()
+```
+What the fuck.
+
+> In Python, variables that are only referenced inside a function are implicitly global. If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+
+The only workaround is to rename one of the variables that have the same name? Or introduce another scope?
 
 ## inspect
 [inspect: Inspect live objects](https://docs.python.org/3/library/inspect.html)

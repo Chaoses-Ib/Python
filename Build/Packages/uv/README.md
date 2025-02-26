@@ -8,17 +8,75 @@
 
 [Features | uv](https://docs.astral.sh/uv/getting-started/features/)
 
-[Jupyter | uv](https://docs.astral.sh/uv/guides/integration/jupyter/)
-
-How to prevent uv creating project with Python from venv/conda?
-- `uv init test --python-preference only-managed` doesn't work?
-
 [uv-interpreter](https://github.com/astral-sh/uv/tree/main/crates/uv-interpreter)
 - [find\_python.rs](https://github.com/astral-sh/uv/blob/main/crates/uv-interpreter/src/find_python.rs)
 - [python\_environment.rs](https://github.com/astral-sh/uv/blob/main/crates/uv-interpreter/src/python_environment.rs)
 
 [uv-virtualenv: A rust library to create Python virtual environments](https://github.com/astral-sh/uv/tree/main/crates/uv-virtualenv)
 - uv-virtualenv 主要是 uv 内部使用的，文档较少，也没有上传到 crates.io，可能会有一些潜在问题。
+
+## [Projects](https://docs.astral.sh/uv/concepts/projects/)
+- `--vcs` defaults to `git`
+  ```gitignore
+  # Python-generated files
+  __pycache__/
+  *.py[oc]
+  build/
+  dist/
+  wheels/
+  *.egg-info
+
+  # Virtual environments
+  .venv
+
+  ```
+  [Automatic Git Repository Initialization for \`uv init\` Command - Issue #7016 - astral-sh/uv](https://github.com/astral-sh/uv/issues/7016)
+- `--vcs git` will not create the repository *and `.gitignore`* if the directory is already in one
+
+  [`uv init` fails to create .git directory or .gitignore file when inside git repo - Issue #11655 - astral-sh/uv](https://github.com/astral-sh/uv/issues/11655)
+  > Regarding the default behavior, how about creating `.gitignore` but without `.git`? Currently, one has to write `.gitignore` manually if the project is inited inside an existing repo that doesn't have ignore rules for Python. If uv creates `.gitignore` by default, this can be skipped, and if someone doesn't want it they can simply remove it, much eaiser than the opposite.
+
+### [Locking and syncing](https://docs.astral.sh/uv/concepts/projects/sync/)
+[`uv.lock`](https://docs.astral.sh/uv/concepts/projects/layout/#the-lockfile)
+> Unlike the `pyproject.toml`, which is used to specify the broad requirements of your project, the lockfile contains the exact resolved versions that are installed in the project environment. This file should be checked into version control, allowing for consistent and reproducible installations across machines.
+>
+> The lockfile is created and updated during uv invocations that use the project environment, i.e., `uv sync` and `uv run`. The lockfile may also be explicitly updated using `uv lock`.
+
+But `uv.lock` is a bit large, it's fine to not save `uv.lock` if one doesn't care about reproducibility.
+
+## [Python versions](https://docs.astral.sh/uv/concepts/python-versions/)
+- How to prevent uv creating project with Python from venv/conda?
+  
+  `uv init test --python-preference only-managed` doesn't work on v0.4.20, but fixed at least on v0.6.3
+
+- Why need `.python-version` if it's already in `pyproject.toml`?
+
+  [Docs: Mention that `.python-version` is obsolete if `project.requires-python` is present in `pyproject.toml`? - Issue #8247 - astral-sh/uv](https://github.com/astral-sh/uv/issues/8247)
+  > `requires-python` is the range of versions supported by your project. `.python-version` is the exact version you want to use when developing.
+
+  > There is a reason to have it in a separate file --- other tools can read it. For example, GitHub Actions's `setup-python` action can read a version from a `.python-file` but not from a `[tool.uv]` option.
+
+  [Support reading Python versions from `tool.uv` - Issue #4359 - astral-sh/uv](https://github.com/astral-sh/uv/issues/4359)
+
+  Not necessary at least on v0.6.3, which will use the latest managed version by default.
+
+## Jupyter
+[Jupyter | uv](https://docs.astral.sh/uv/guides/integration/jupyter/)
+
+- As a dependency
+  ```pwsh
+  uv init project
+  cd project
+  uv add --dev ipykernel
+  code .
+  ```
+  Can only detect `.venv` under the root directory, not in subdirectories.
+- As a tool
+  ```
+  uv tool run jupyter lab
+  ```
+
+How to use Jupyter in VS Code without make a project every time?
 
 ## Dependencies
 [Caching | uv](https://docs.astral.sh/uv/concepts/cache/)

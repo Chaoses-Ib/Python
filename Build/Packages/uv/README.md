@@ -44,6 +44,29 @@
 
 But `uv.lock` is a bit large, it's fine to not save `uv.lock` if one doesn't care about reproducibility.
 
+## [Virtual environments](https://docs.astral.sh/uv/pip/environments/)
+[CLI](https://docs.astral.sh/uv/reference/cli/#uv-venv)
+- `uv venv`
+  - `uv venv --seed`
+
+    [virtualenv - What exactly is a "seed package" in Python? - Stack Overflow](https://stackoverflow.com/questions/79053771/what-exactly-is-a-seed-package-in-python)
+
+- Activation
+  - Only `.venv` in the current directory or the direct parent directory will be used
+  - [Add a command to activate the virtual environment, e.g., `uv shell` - Issue #1910 - astral-sh/uv](https://github.com/astral-sh/uv/issues/1910)
+
+  ```sh
+  # Windows
+  .\.venv\Scripts\activate
+  # Linux
+  source .venv/bin/activate
+
+  # To let VS Code discover the venv:
+  code .
+  ```
+
+[Question: How to install local python package? - Issue #2418 - astral-sh/uv](https://github.com/astral-sh/uv/issues/2418)
+
 ## [Python versions](https://docs.astral.sh/uv/concepts/python-versions/)
 - How to prevent uv creating project with Python from venv/conda?
   
@@ -60,9 +83,7 @@ But `uv.lock` is a bit large, it's fine to not save `uv.lock` if one doesn't car
 
   Not necessary at least on v0.6.3, which will use the latest managed version by default.
 
-## Jupyter
-[Jupyter | uv](https://docs.astral.sh/uv/guides/integration/jupyter/)
-
+## [Jupyter](https://docs.astral.sh/uv/guides/integration/jupyter/)
 - As a dependency
   ```pwsh
   uv init project
@@ -77,6 +98,8 @@ But `uv.lock` is a bit large, it's fine to not save `uv.lock` if one doesn't car
   ```
 
 How to use Jupyter in VS Code without make a project every time?
+
+[Consider adding documentation on using `uv ...` to use a `.venv` in Jupyter notebooks - Issue #6329 - astral-sh/uv](https://github.com/astral-sh/uv/issues/6329)
 
 ## Dependencies
 [Caching | uv](https://docs.astral.sh/uv/concepts/cache/)
@@ -105,3 +128,10 @@ If every new project always uses the latest version, cache doesn't make much sen
   ~~`uv pip install torch==2.4.1+cu124 --index-url https://download.pytorch.org/whl/cu124`~~
 
   Or is it just becuase Python 3.13 is not supported yet?
+
+## [Tools](https://docs.astral.sh/uv/concepts/tools/)
+- `uv tool run` / `uvx` / `uv run --no-project --with <name> -- <name>`
+- Tools will be installed into venvs in `uv cache dir`
+- How to run tool from a given venv?
+
+  `uv pip install <name> && uv run <name>`

@@ -22,6 +22,8 @@ The documentation is too brief, though PDM is worse.
 
   > When the user has not set any file selection options, all files that are not ignored by your VCS will be included.
 
+[Supporting non-root VCS ignore - Issue #304 - pypa/hatch](https://github.com/pypa/hatch/issues/304)
+
 [Monorepo support - Issue #233 - pypa/hatch](https://github.com/pypa/hatch/issues/233)
 
 [Support for Editable Dependencies - Issue #588 - pypa/hatch](https://github.com/pypa/hatch/issues/588)

@@ -71,3 +71,6 @@ fn detect_python_executable(venv: impl AsRef<Path>) -> PathBuf {
     }
 }
 ```
+
+### VS Code
+[virtualenv - Jupyter notebooks in Visual Studio Code does not use the active virtual environment - Stack Overflow](https://stackoverflow.com/questions/58119823/jupyter-notebooks-in-visual-studio-code-does-not-use-the-active-virtual-environm)

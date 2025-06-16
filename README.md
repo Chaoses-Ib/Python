@@ -15,6 +15,7 @@
   - [Contexts](Language/Statements/Contexts.md)
 - [Exceptions](Language/Exceptions.md)
 - [Concurrency](Language/Concurrency/README.md)
+  - [Synchronization Primitives](Language/Concurrency/Sync.md)
   - [Async/await](Language/Concurrency/Async-await.md)
   - [Context Variables](Language/Concurrency/Context.md)
 - [Modules](Language/Modules/README.md)

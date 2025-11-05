@@ -57,6 +57,8 @@ venv:
 - [pybind/pybind11: Seamless operability between C++11 and Python](https://github.com/pybind/pybind11)
 
 ### Rust
+[→Rust FFI: Python](https://github.com/Chaoses-Ib/Rust/blob/main/Language/FFI.md#python)
+
 - [PyO3: Rust bindings for the Python interpreter](https://github.com/PyO3/pyo3)
 - [pyembed](https://gregoryszorc.com/docs/pyoxidizer/main/pyembed.html): Facilitates the control of an embedded Python interpreter.
   

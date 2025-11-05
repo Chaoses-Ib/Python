@@ -31,20 +31,7 @@
   Compiles fully typed Python code to a C extension, based on mypy.
 
 ## Rust
-- [RustPython: A Python Interpreter written in Rust](https://github.com/RustPython/RustPython)
-
-  [\[RFC\] What are the compatibility goals for RustPython? - Issue #1940 - RustPython/RustPython](https://github.com/RustPython/RustPython/issues/1940)
-  - [How to deal with C-API extensions? - Issue #158 - RustPython/RustPython](https://github.com/RustPython/RustPython/issues/158)
-
-  - 2024-02 [RustPython | Hacker News](https://news.ycombinator.com/item?id=39286458)
-
-    > Packages that rely on c dependencies like numpy, etc. only work if you write a custom implementation by hand; the “normal” package flat out doesn’t (and cannot) work. So basically you get no packages that use native extensions, unless the project explicitly implements support for them.
-    >
-    > Pypy is the only implementation I'm aware of that has implemented a c api that is mostly compatible (see [https://doc.pypy.org/en/latest/faq.html#do-c-extension-modul...](https://doc.pypy.org/en/latest/faq.html#do-c-extension-modules-work-with-pypy)) For eg. Python running in a .net host or a Java host... I think this kind of compatibility would just be flat out impossible. For rust... hm... probably possible. For wasm? Definitely not.
-
-  - 2024-02 [RustPython: An open source An open source Python 3 (CPython >= 3.11.0) interpreter written in Rust : r/rust](https://www.reddit.com/r/rust/comments/1al10zh/rustpython_an_open_source_an_open_source_python_3/)
-
-    > I think in terms of completely replacing CPython, RustPython would have a long way to go - one notable feature that's missing at this moment is native modules; that would still have to be done via a C-compatible ABI, and there's a lot of ABI surface area to cover with that.
+- [→RustPython](RustPython/README.md)
 
 ## Python
 - [PyPy](https://www.pypy.org/)

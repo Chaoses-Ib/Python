@@ -34,6 +34,7 @@
     - [Reverse Engineering](Build/Implementations/Cython/Reverse.md)
     - [Protection](Build/Implementations/Cython/Protection.md)
   - [PyScript](Build/Implementations/PyScript.md)
+  - [RustPython](Build/Implementations/RustPython/README.md)
 - [Environments](Build/Environments.md)
 - [Package Management](Build/Packages/README.md)
   - [Wheel](Build/Packages/Wheel/README.md)

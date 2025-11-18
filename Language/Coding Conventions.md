@@ -1,11 +1,15 @@
 # Coding Conventions
 [PEP 8 -- Style Guide for Python Code | peps.python.org](https://peps.python.org/pep-0008/)
 
+[PEP 423 -- Naming conventions and recipes related to packaging | peps.python.org](https://peps.python.org/pep-0423/)
+
 [More Control Flow Tools - Python3 Docs](https://docs.python.org/3/tutorial/controlflow.html#intermezzo-coding-style)
 
 [coding style - Python file naming convention? - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention)
 
 [Python project structure: when to use singular, when plural? : softwarearchitecture](https://www.reddit.com/r/softwarearchitecture/comments/yamso3/python_project_structure_when_to_use_singular/)
+
+[I Suck at Naming Python Modules.](https://samuelstevens.me/writing/python-names)
 
 ## Underscores vs dashes
 [Analysis of PyPi package names and the use of dashes underscores upper and lower case](https://gist.github.com/gene1wood/9472a9d0dffce1a56d6e796afc6539b8)

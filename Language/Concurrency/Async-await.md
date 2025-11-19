@@ -5,6 +5,8 @@
 
 [asyncio: Asynchronous I/O - Python3 Docs](https://docs.python.org/3/library/asyncio.html)
 
+[Python has had async for 10 years -- why isn't it more popular?](https://tonybaloney.github.io/posts/why-isnt-python-async-more-popular.html)
+
 [Thoughts on infectious systems: async/await and pure : ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/comments/vofiyv/thoughts_on_infectious_systems_asyncawait_and_pure/)
 
 [Designing Libraries for Async and Sync I/O](https://sethmlarson.dev/designing-libraries-for-async-and-sync-io)

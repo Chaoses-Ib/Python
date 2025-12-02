@@ -80,6 +80,8 @@ Others:
 
 ## Proxies and wrappers
 - [wrapt: A Python module for decorators, wrappers and monkey patching.](https://github.com/GrahamDumpleton/wrapt)
+  - Python ≥ 3.8
+    - [Drop 3.6/3.7 from test matrix and make 3.8 minimum Python version.](https://github.com/GrahamDumpleton/wrapt/commit/d19eeb7f8a3f88f6dc51608caa0df2e150b541c5)
 
   [Better Python Decorators with Wrapt | Scout APM Blog](https://scoutapm.com/blog/better-python-decorators-with-wrapt)
 

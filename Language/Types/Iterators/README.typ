@@ -1,5 +1,7 @@
 #import "@local/ib:0.1.0": *
 #title[Iterators]
+#a[PEP 234 -- Iterators][https://peps.python.org/pep-0234/]
+
 Iterable 实现 ```py __iter__()``` 和 ```py __next__()``` \
 Iterator 通过 ```py iter()``` 得到，通过 ```py next()``` 前进
 

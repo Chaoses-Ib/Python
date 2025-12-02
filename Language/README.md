@@ -3,6 +3,10 @@
 
 [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 
+## Python Enhancement Proposals (PEPs)
+[PEP 0 -- Index of Python Enhancement Proposals (PEPs)](https://peps.python.org/)
+- Appending a `/` to the URL will make the web page cannot render properly.
+
 ## Abstract syntax trees
 Libraries:
 - [ast --- Abstract Syntax Trees - Python3 Docs](https://docs.python.org/3/library/ast.html)

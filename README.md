@@ -61,6 +61,7 @@
 - Text
   - [Regex](Libraries/Text/Regex.md)
   - [JSON](Libraries/Text/JSON.md)
+- [Serialization](Libraries/Serialization/README.typ)
 - [I/O](Libraries/IO/README.md)
   - [Logging](Libraries/IO/Logging.md)
   - [Config](Libraries/IO/Config.md)

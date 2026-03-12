@@ -1,11 +1,16 @@
-# Cython
-[Cython: C-Extensions for Python](https://cython.org/)
+#import "@local/ib:0.1.0": *
+#title[#a[Cython][https://cython.org/]]
+#a-badge[https://github.com/cython/cython]
+#a-badge[https://pypi.org/project/Cython/]
 
-[cython/cython: The most widely used Python to C compiler](https://github.com/cython/cython)
+#q[C-Extensions for Python]
+
+#q[The most widely used Python to C compiler]
 
 A widely used optimising Python-to-C compiler, CPython extension module generator, and wrapper language for binding external libraries. Interacts with CPython runtime and supports embedding CPython in stand-alone binaries.
 
 
+#md(````
 [Tutorials --- Cython 0.29.26 documentation](https://cython.readthedocs.io/en/stable/src/tutorial/index.html)
 
 [Basic Tutorial --- Cython 0.29.26 documentation](https://cython.readthedocs.io/en/stable/src/tutorial/cython_tutorial.html)
@@ -83,8 +88,13 @@ def primes(nb_primes: cython.int):
 纯 Python 模式是 3.0 才添加的（3.0 之前的纯 Python 模式需要 .pxd）。
 
 [Basic Tutorial --- Cython 3.0.0a10 documentation](https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html)
+````)
 
-## C++
+#a[An Introduction to Just Enough Cython to be Useful | Peter Baumgartner][https://www.peterbaumgartner.com/blog/intro-to-just-enough-cython-to-be-useful/]
+
+#a[Navigating the Cython Compiler Source Code: short guide][https://nayuos.nexedi.com/P-CYTHON-Source.Code.Short.Guide]
+
+= C++
 ```python
 # distutils: language=c++
 
